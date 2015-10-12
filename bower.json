@@ -1,0 +1,24 @@
+{
+  "name": "cordova-vibration",
+  "version": "0.1.0",
+  "authors": [
+    "Adrian de la Rosa <adrian@delarosab.me>"
+  ],
+  "description": "An element providing access to vibration system for cordova applications.",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "cordova",
+    "vibration"
+  ],
+  "main": "cordova-vibration.html",
+  "license": "https://raw.githubusercontent.com/adelarosab/cordova-vibration/master/LICENSE",
+  "homepage": "https://github.com/adelarosab/cordova-vibration/",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0",
+    "cordova-device": "~0.1.3"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0"
+  }
+}

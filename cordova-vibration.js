@@ -3,11 +3,15 @@
   Polymer({
     is: "cordova-vibration",
     properties: {
+
+      /* If true, automatically performs vibration when device is ready. */
       auto: {
         reflectToAttribute: true,
         type: Boolean,
         value: false
       },
+
+      /* Return if cordova deviceready event has been fired. */
       ready: {
         notify: true,
         observer: "_observeReady",
@@ -16,6 +20,8 @@
         type: Boolean,
         value: false
       },
+
+      /* Milliseconds to vibrate the device. */
       time: {
         reflectToAttribute: true,
         type: Number,
@@ -27,6 +33,8 @@
         return this.vibrate();
       }
     },
+
+    /* Vibrates the device for a given amount of time. */
     vibrate: function() {
       if (this.ready) {
         return navigator.vibrate(this.time);

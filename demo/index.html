@@ -1,13 +1,32 @@
 <!doctype html>
 <html>
   <head>
+    <!-- META -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+    <!-- TITLE -->
     <title>cordova-vibration Demo</title>
+
+    <!-- COMPONENT -->
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="../cordova-vibration.html">
   </head>
   <body unresolved>
     <cordova-vibration></cordova-vibration>
+    <section>
+      <header>
+        <h1>Vibration</h1>
+      </header>
+      <main>
+        <button>Vibrate!</button>
+      </main>
+    </section>
+    <script>
+      var vibrationEl = document.querySelector('cordova-vibration'),
+        button = document.querySelector('button');
+
+      button.addEventListener('click', vibrationEl.vibrate);
+    </script>
   </body>
 </html>
